@@ -1,0 +1,61 @@
+# === ANDROID / KOTLIN ===
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# === OS GENERATED ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.log
+
+# === SIGNING / SECRETS ===
+*.keystore
+*.jks
+*.key
+*.pem
+key.properties
+
+# === GRADLE WRAPPER ===
+/.gradle/
+/**/build/
+/**/.gradle/
+/**/local.properties
+gradle-app.setting
+
+# === JETPACK COMPOSE CACHE ===
+**/compose*.cache
+
+# === KOTLIN SPECIFIC ===
+*.kotlin_module
+
+# === TEST / COVERAGE ===
+*.ec
+coverage/
+
+# === LOGS / TEMP ===
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/shelf/
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+
+# === INTELLIJ RUN CONFIGS ===
+.idea/runConfigurations/
+
+# === ANDROID STUDIO CODE STYLE ===
+.idea/codestyles/
+
+# === FILES YOU CREATED THAT SHOULDN’T BE COMMITTED ===
+/playersnba.zip
+*.apk
+*.apks
+*.aab
