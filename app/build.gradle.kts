@@ -23,9 +23,15 @@ android {
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
 		val localProperties = Properties().apply {
-			load(rootProject.file("local.properties").inputStream())
+			val localPropertiesFile = rootProject.file("local.properties")
+			if (localPropertiesFile.exists()) {
+				load(localPropertiesFile.inputStream())
+			}
 		}
-		val apiKey = localProperties.getProperty("NBA_API_KEY") ?: ""
+
+		val apiKey = (project.findProperty("NBA_API_KEY") as? String)
+			?: localProperties.getProperty("NBA_API_KEY", "")
+
 		buildConfigField("String", "NBA_API_KEY", "\"$apiKey\"")
 	}
 
