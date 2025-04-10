@@ -35,7 +35,7 @@ A modern Android app built with **Jetpack Compose** that displays NBA players an
 
 1. Clone the project:
 ```bash
-git clone https://github.com/luk4s2/nba-players-app.git
+git clone https://github.com/luk4s2/PlayersNBA
 ```
 
 2. Open in Android Studio (Giraffe or newer)
